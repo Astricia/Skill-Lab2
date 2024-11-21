@@ -1,13 +1,257 @@
-body {
+/* Reset and Body styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background:linear-gradient(blue orange);
+  color: #333;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.nav-links a {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+/* Homepage styles */
+.homepage {
+  padding: 20px;
+  text-align: center;
+  background:linear-gradient(blue orange)
+}
+
+.homepage img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Categories and Menu Item styles */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.category-card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: white;
+}
+
+.category-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  padding: 10px;
+  color: #333;
+}
+
+.category-card p {
+  margin: 10px;
+  font-size: 0.9em;
+}
+
+.category-card button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.category-card button:hover {
+  background-color: #45a049;
+}
+
+/* Cart styles */
+.cart-items {
+  list-style-type: none;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-items button {
+  background-color: #FF6F61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.cart-items button:hover {
+  background-color: #ff4c39;
+}
+
+.cart-total {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px;
+  text-align: right;
+}
+
+.checkout-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.checkout-button:hover {
+  background-color: #45a049;
+}
+/* src/styles.css */
+section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+h2 {
+  color: #333;
+  font-size: 2em;
+}
+
+h3 {
+  color: #666;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+ul {
+  margin-top: 15px;
+}
+
+ul li {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+/* src/styles.css */
+.contact {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.success-message {
+  padding: 20px;
+  background-color: #e0ffe0;
+  border: 1px solid #4CAF50;
+  border-radius: 5px;
+  color: #4CAF50;
+  font-size: 1.2em;
 }
