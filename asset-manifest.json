@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Skill-lab2/static/css/main.20401673.css",
+    "main.js": "/Skill-lab2/static/js/main.09d53b26.js",
+    "static/js/453.5e560239.chunk.js": "/Skill-lab2/static/js/453.5e560239.chunk.js",
+    "index.html": "/Skill-lab2/index.html",
+    "main.20401673.css.map": "/Skill-lab2/static/css/main.20401673.css.map",
+    "main.09d53b26.js.map": "/Skill-lab2/static/js/main.09d53b26.js.map",
+    "453.5e560239.chunk.js.map": "/Skill-lab2/static/js/453.5e560239.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20401673.css",
+    "static/js/main.09d53b26.js"
+  ]
+}
